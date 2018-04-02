@@ -5,8 +5,19 @@ html{
 	font-size: 10px;
 }
 
+img{
+	display: block;
+}
+
 .mainscreen{
 	height: 100vh;
+}
+
+
+.box{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /*header*/
@@ -53,4 +64,73 @@ html{
 	-webkit-background-size: cover;
 	background-size: cover;
 	height: calc(100vh - 18rem);
+	position: relative;
 }
+.industaty{
+	position: absolute;
+	bottom:0;
+}
+
+
+.industaty__header{
+	background-color: #ffac56;
+	text-transform: uppercase;
+	color:#fff;
+	padding: 3rem 4rem;
+}
+.industaty__header p{
+	font-size: 1.4rem;
+}
+.industaty__header h1{
+	font-size: 3rem;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	padding: 0;
+	margin: 0;
+}
+
+
+
+.industaty__item{
+	background-color: #03b6e7;
+	margin: 0;
+	border: 1px solid #00a6d3;
+	
+	padding: 3rem 4rem;
+}
+
+.industaty__item a{
+	color:#fff;
+	font-size: 1.4em;
+	text-transform: uppercase;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.industaty__item a:before{
+	background: url(../img/icon_business.png);  
+	display: block;  
+    height: 25px;  
+    width: 25px; 
+}
+.industaty__icon{
+	color:#fff;
+	font-size: 2em;
+	opacity:0.7;
+}
+
+.industaty__item:hover{
+	background-color: #00a6d3;
+}
+
+.industaty__item:hover .industaty__icon{
+	opacity:1;
+}
+
+.industaty__button{
+	background-color: #16d428;
+	padding: 15px 30px;
+	text-align: center;
+	border-radius: 5rem;
+}
+
