@@ -5,6 +5,10 @@ html{
 	font-size: 10px;
 }
 
+a:hover{
+	text-decoration: none;
+}
+
 img{
 	display: block;
 }
@@ -13,11 +17,90 @@ img{
 	height: 100vh;
 }
 
+p, bloquote,time {
+	font-family: 'Domine', serif;
+	font-size: 1.5rem;
+		color: #838b8c;
+	line-height: 2em;
+}
 
-.box{
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+bloquote{
+	color: #ffffff;
+}
+
+time{
+	margin: 0;
+	padding: 0;
+}
+
+h2{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 3.2rem;
+	color: #343a3b;
+	padding-bottom: 35px;
+}
+
+h2:before{
+	content: "";
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 1.4rem;
+	color: #898e8f;
+	display: block;
+}
+
+
+h3{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.8rem;
+	color: #343a3b;
+	padding-bottom: 35px;
+}
+
+
+h4{
+	color:#fff;
+	text-transform: uppercase;
+	font-size: 1.4rem;
+}
+h4:after{
+	display: block;
+	color:#fff;
+	font-size: 1.4rem;
+	font-family: 'Domine', serif;
+	text-transform: none;
+	padding-top: 0.5em;
+}
+
+
+
+
+.button{
+	background-color: #16d428;
+	padding: 15px 30px;
+	text-align: center;
+	border-radius: 5rem;
+	color:#fff;
+	font-size: 1.4em;
+	text-transform: uppercase;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.button:hover{
+	color: #fff;
+	text-decoration: none;
+}
+
+section{
+	padding: 100px 0;
+}
+
+
+.img{
+	display: block;
 }
 
 /*header*/
@@ -69,6 +152,7 @@ img{
 .industaty{
 	position: absolute;
 	bottom:0;
+	overflow: hidden;
 }
 
 
@@ -80,6 +164,8 @@ img{
 }
 .industaty__header p{
 	font-size: 1.4rem;
+	color:#fff;
+	font-family: 'Montserrat', sans-serif;
 }
 .industaty__header h1{
 	font-size: 3rem;
@@ -127,10 +213,177 @@ img{
 	opacity:1;
 }
 
-.industaty__button{
-	background-color: #16d428;
-	padding: 15px 30px;
-	text-align: center;
-	border-radius: 5rem;
+
+/*aboutus*/
+.aboutus h2:before{
+	content: "What we are";
 }
 
+.aboutus__text{
+	padding-bottom: 35px;
+}
+
+/*oursteps*/
+
+
+.oursteps{
+	background-color: #e7eff1;
+}
+
+.oursteps h2:before{
+	content:"our";
+}
+
+.oursteps__img{
+	display: block;
+	padding-bottom: 3rem;
+	width: 6.8rem;
+	height: 9.3rem;
+}
+
+.oursteps__item{
+	padding-right: 4rem;
+}
+
+
+.oursteps h3:before{
+	content: "";
+	text-transform: uppercase;
+	font-size: 2rem;
+	color: #16d428;
+	display: block;
+	padding-bottom: 1.5rem ;
+}
+
+
+
+
+.oursteps__item:first-child h3:before{
+	content:"01";
+}
+
+.oursteps__item:nth-child(2) h3:before{
+	content:"02";
+}
+
+.oursteps__item:nth-child(3) h3:before{
+	content:"03";
+}
+
+.oursteps__item p{
+	line-height: 1.8em;
+}
+
+/*featureproject*/
+
+.featuredproj h2:before
+{
+	content:"Featured";
+}
+
+/*testimonials*/
+
+.testimonials{
+	background-color: #03b6e7;
+}
+
+.testimonials h2{
+	color:#fff;
+}
+
+.testimonials h2:before{
+	content:"Happy CLients";
+	color:#fff;
+}
+
+.testimonials__q:after{
+	display: block;
+	width: 2em;
+	content:"";
+	border-bottom: 2px solid #fff;
+	color:#fff;
+	margin-top: 40px;
+	margin-bottom: 60px;
+}
+
+.client h4:after{
+	content:"Designation";
+}
+
+.client__img{
+	padding-right: 3rem;
+}
+
+.tetstimonials__dots{
+	color:#fff;
+	font-size: 4rem;
+}
+
+.ourblog{
+	background-color: #e7eff1;
+	padding: 0;
+
+}
+
+.ourblog__header{
+	padding-top: 90px;
+}
+.ourblog h2:before{
+	content:"News";
+}
+
+.x{
+	padding-right: 0 !important;
+	}	
+.ourblog__picture{
+	background: url(../img/ourblog.jpg) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	background-clip:border-box;
+
+}
+
+.ourblog__menu li{
+	list-style-type:none;
+	margin-left: 1rem;
+	margin-top: 1.8rem;
+	margin-bottom: 35px;
+}
+
+.ourblog__menu a{
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	border: 2px solid #606668;
+	border-radius: 50px;
+	color: #606668;
+	font-weight: 700;
+	width: 14rem;
+	text-align: center;
+	display: block;
+	padding: 0.5rem 0;
+}
+
+.ourblog__menu a:hover{
+	text-decoration: none;
+	border: 2px solid #ffac56;
+}
+
+.artic{
+	margin-bottom: 7rem;
+}
+
+.artic__time{
+	color: #343a3b;
+}
+
+.artic:hover .artic__time span{
+	color:#16d428;
+}
+
+
+.artic h3{
+	margin-top: 0.5rem;
+	padding-bottom: 30px;
+}
