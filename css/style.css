@@ -1,84 +1,3 @@
-/*animate*/
-@-webkit-keyframes bounceInRight {
-  from,
-  60%,
-  75%,
-  90%,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(3000px, 0, 0);
-    transform: translate3d(3000px, 0, 0);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(-25px, 0, 0);
-    transform: translate3d(-25px, 0, 0);
-  }
-
-  75% {
-    -webkit-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
-  }
-
-  90% {
-    -webkit-transform: translate3d(-5px, 0, 0);
-    transform: translate3d(-5px, 0, 0);
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes bounceInRight {
-  from,
-  60%,
-  75%,
-  90%,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(3000px, 0, 0);
-    transform: translate3d(3000px, 0, 0);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(-25px, 0, 0);
-    transform: translate3d(-25px, 0, 0);
-  }
-
-  75% {
-    -webkit-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
-  }
-
-  90% {
-    -webkit-transform: translate3d(-5px, 0, 0);
-    transform: translate3d(-5px, 0, 0);
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.bounceInRight {
-  -webkit-animation-name: bounceInRight;
-  animation-name: bounceInRight;
-}
 
 
 /*specify*/
@@ -96,9 +15,6 @@ img{
 	display: block;
 }
 
-.mainscreen{
-	height: 100vh;
-}
 
 p, bloquote,time, adress {
 	font-family: 'Domine', serif;
@@ -114,6 +30,22 @@ bloquote{
 time, ul{
 	margin: 0;
 	padding: 0;
+}
+
+h1{
+	font-size: 3rem;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	padding: 0;
+	margin: 0;
+}
+
+h1:before{
+	display: block;
+	font-size: 1.4rem;
+	color:#fff;
+	font-family: 'Montserrat', sans-serif;
+	content:"We are leading consulting company";
 }
 
 h2{
@@ -199,7 +131,9 @@ section, footer{
 	color: #ffffff;
 	padding: 1.5rem 0;
 }
-
+.top span{
+	margin-left: 2.5rem;
+}
 .top a{ 
 	text-decoration: none;
 	color: #727779;
@@ -208,6 +142,16 @@ section, footer{
 .top a:hover{ 
 	color: #ffac56;
 }
+
+.top__content {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-end;
+}
+
 
 
 .menu{
@@ -241,26 +185,15 @@ section, footer{
 	overflow: hidden;
 }
 
-
 .industaty__header{
+	margin-top: 4rem;
 	background-color: #ffac56;
 	text-transform: uppercase;
 	color:#fff;
-	padding: 3rem 4rem;
+	padding: 2rem 4rem;
 	width: 100%;
 }
-.industaty__header p{
-	font-size: 1.4rem;
-	color:#fff;
-	font-family: 'Montserrat', sans-serif;
-}
-.industaty__header h1{
-	font-size: 3rem;
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-	padding: 0;
-	margin: 0;
-}
+
 
 .industaty li a .industry-img {
     width: 35px;
@@ -344,6 +277,7 @@ section, footer{
 /*aboutus*/
 .aboutus{
 	position: relative;
+	text-align: right;
 }
 .aboutus h2:before{
 	content: "What we are";
@@ -352,7 +286,10 @@ section, footer{
 .aboutus__text{
 	padding-bottom: 35px;
 }
-
+.aboutus__img{
+	width: 100%;
+	position: relative;
+}
 
 .badge{
 		height: 28rem;
@@ -409,9 +346,9 @@ section, footer{
 }
 
 .oursteps__item{
-	padding-right: 4rem;
-	width: 33.3%;
+	width: 30%;
 }
+
 
 
 .oursteps h3:before{
@@ -467,6 +404,11 @@ section, footer{
 .featuredproj__item{
 	position: relative;
 	overflow: hidden;
+	width: 100%;
+}
+
+.featuredproj__item_small{
+	width: 48%;	
 }
 
 .featuredproj__plus{
@@ -546,6 +488,9 @@ section, footer{
 	color:#fff;
 }
 
+.testimonials__q{
+		width: 75%;
+}
 .testimonials__q:after{
 	display: block;
 	width: 2em;
@@ -554,8 +499,13 @@ section, footer{
 	color:#fff;
 	margin-top: 40px;
 	margin-bottom: 60px;
+
 }
 
+
+.client {
+	width:70%;
+}
 .client h4:after{
 	content:"Designation";
 }
@@ -567,6 +517,8 @@ section, footer{
 .tetstimonials__dots{
 	color:#fff;
 	font-size: 4rem;
+	text-align: right;
+	width: 25%;
 }
 
 .ourblog{
@@ -579,6 +531,7 @@ section, footer{
 .ourblog__header{
 	padding-top: 90px;
 }
+
 .ourblog h2:before{
 	content:"News";
 }
@@ -596,11 +549,15 @@ section, footer{
 
 }
 
+.ourblog__menu{
+	margin-top: 1.8rem;
+	margin-bottom: 3.5rem;
+}
+
 .ourblog__menu li{
 	list-style-type:none;
 	margin-right: 2rem;
-	margin-top: 1.8rem;
-	margin-bottom: 35px;
+
 }
 
 .ourblog__menu a{
@@ -633,6 +590,11 @@ section, footer{
 	color:#16d428;
 }
 
+.artic:hover h3{
+	color:#ffac56;
+}
+
+
 
 .artic h3{
 	margin-top: 0.5rem;
@@ -647,7 +609,7 @@ section, footer{
 
 .contuctus__item{
 	border: 1px solid rgba(166,168,169,0.3);
-	padding: 40px;
+	height: 10rem;
 }
 
 .contuctus__item h3{
@@ -746,3 +708,87 @@ section, footer{
 	opacity: 0.3;
 
 }
+
+@media (max-width: 1199.98px) { 
+	.banner{
+		height: 100%;
+	}
+	.ourblog__menu li{
+		margin-bottom: 10px;
+	}
+
+}
+
+@media (max-width: 991.98px) { 
+		.logo{
+			margin: 0 auto;
+			margin-bottom: 1.8rem;
+		}
+		.top__content{
+			justify-content: space-between;
+		}
+
+		.top span{
+			margin-left: 0;
+		}
+		.aboutus{
+			text-align: center;
+		}
+
+		.aboutus .button{
+			display: block;
+			margin-bottom: 10rem;
+		}
+		.oursteps{
+			text-align: center;
+		}
+		.oursteps__img{
+			display: block;
+			margin: 0 auto;
+			margin-top: 2.5rem;
+		}
+
+		.oursteps__item{
+			width: 100%;
+		}
+
+		.featuredproj{
+			text-align: center;
+			margin: 0 auto;
+		}
+
+
+		.featuredproj__item {
+			width: 80%;
+			text-align: center;
+			margin: 0 auto;
+			margin-bottom: 4.5rem;
+		}
+
+		.featuredproj__item img{
+			width: 100%;
+		}
+
+		.ourblog__picture{
+			top: 0;
+			left: 0;
+			width: 100%;
+			opacity: 0.1;
+		}
+
+		.contactus{text-align: center;}
+
+		.contuctus__item{ width: 80%; margin: 0 auto; margin-bottom: 2rem;}
+
+		.footer__subscribe{
+			margin-bottom: 4rem;
+			width: 100%;
+		}
+
+		.footer h3{
+			text-align: center;
+		}
+
+ }
+
+ @media (max-width: 575.98px) { ... }
