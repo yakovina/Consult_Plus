@@ -11,7 +11,8 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 
 <body>
@@ -31,14 +32,14 @@
                     <div class="row d-flex align-items-end">
                         <div class="col-lg-2"><img src="img/logo.png" alt="logo" class="logo"></div>
                         <div class="col-lg-6 ml-auto">
-                            <nav>
+                            <nav id="menu">
                                 <ul class="menu__list">
                                     <li class="menu__item"><a href="#">Home</a></li>
                                     <li class="menu__item"><a href="#aboutus">about us</a></li>
-                                    <li class="menu__item"><a href="#">industry</a></li>
-                                    <li class="menu__item"><a href="#">services</a></li>
-                                    <li class="menu__item"><a href="#">pages</a></li>
-                                    <li class="menu__item"><a href="#">Contact us </a></li>
+                                    <li class="menu__item"><a href="#industry">industry</a></li>
+                                    <li class="menu__item"><a href="#services">services</a></li>
+                                    <li class="menu__item"><a href="#pages">pages</a></li>
+                                    <li class="menu__item"><a href="#contactus">Contact us </a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -253,7 +254,7 @@
             </div>
         </div>
     </section>
-    <section class="contactus ">
+    <section class="contactus " id="contactus">
         <div class="container">
             <div class="contactus__header">
                 <h2 class="contactus">Contact us</h2>
@@ -337,6 +338,7 @@
             <adress class="copyryting">Copyright © 2016 Consultplus theme.</adress>
         </div>
     </footer>
+
 </body>
 
 </html>
