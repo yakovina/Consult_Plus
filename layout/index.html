@@ -10,7 +10,11 @@
     <link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </head>
@@ -32,15 +36,21 @@
                     <div class="row d-flex align-items-end">
                         <div class="col-lg-2"><img src="img/logo.png" alt="logo" class="logo"></div>
                         <div class="col-lg-6 ml-auto">
-                            <nav id="menu">
-                                <ul class="menu__list">
-                                    <li class="menu__item"><a href="#">Home</a></li>
-                                    <li class="menu__item"><a href="#aboutus">about us</a></li>
-                                    <li class="menu__item"><a href="#industry">industry</a></li>
-                                    <li class="menu__item"><a href="#services">services</a></li>
-                                    <li class="menu__item"><a href="#pages">pages</a></li>
-                                    <li class="menu__item"><a href="#contactus">Contact us </a></li>
-                                </ul>
+                            <nav class="navbar navbar-light bg-white navbar-expand-lg  menu__list" id="menu" >
+                                <a class="navbar-brand" href="#">Menu</a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                    <div class="navbar-nav">
+                                        <a class=" menu__item nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                                        <a class="menu__item nav-item nav-link" href="#aboutus">about us</a>
+                                        <a class="menu__item nav-item nav-link" href="#industry">industry</a>
+                                        <a class="menu__item nav-item nav-link" href="#services">services</a>
+                                        <a class="menu__item nav-item nav-link" href="#pages">pages</a>
+                                        <a class="menu__item nav-item nav-link" href="#contactus">Contact us </a>
+                                    </div>
+                                </div>
                             </nav>
                         </div>
                     </div>
@@ -195,23 +205,23 @@
                 <img src="img/icon_quote_last.png">
             </div>
             <div class="d-flex">
-            <div class="client">
-                <div class="client__item d-flex align-items-center">
-                    <img src="img/client1.png" alt="" class="client__img">
-                    <h4>Client Name</h4>
+                <div class="client">
+                    <div class="client__item d-flex align-items-center">
+                        <img src="img/client1.png" alt="" class="client__img">
+                        <h4>Client Name</h4>
+                    </div>
+                    <div class="client__item d-flex align-items-center">
+                        <img src="img/client2.png" alt="" class="client__img">
+                        <h4>Client Name</h4>
+                    </div>
+                    <div class="client__item d-flex align-items-center">
+                        <img src="img/client3.png" alt="" class="client__img">
+                        <h4>Client Name</h4>
+                    </div>
                 </div>
-                <div class="client__item d-flex align-items-center">
-                    <img src="img/client2.png" alt="" class="client__img">
-                    <h4>Client Name</h4>
+                <div class="tetstimonials__dots">
+                    <i class="fas fa-ellipsis-h"></i>
                 </div>
-                <div class="client__item d-flex align-items-center">
-                    <img src="img/client3.png" alt="" class="client__img">
-                    <h4>Client Name</h4>
-                </div>
-            </div>
-            <div class="tetstimonials__dots">
-                <i class="fas fa-ellipsis-h"></i>
-            </div>
             </div>
         </div>
         </div>
@@ -338,7 +348,6 @@
             <adress class="copyryting">Copyright © 2016 Consultplus theme.</adress>
         </div>
     </footer>
-
 </body>
 
 </html>
