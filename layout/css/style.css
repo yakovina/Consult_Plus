@@ -89,15 +89,7 @@ h4:after{
 	padding-top: 0.5em;
 }
 
-.carousss{
-	position: absolute;
-	z-index:-1;
-}
 
-.ind_a{
-	position: absolute;
-	z-index:100;
-}
 
 
 .button{
@@ -131,16 +123,23 @@ section, footer{
 
 
 .aa{
-	position: absolute;
-	z-index:-1;
 	padding: 0;
+	height: calc(100vh - 18rem);
+	position: relative;
 }
 #myCarousel{
 	padding: 0;
 }
-.slide_img{
-height: calc(100vh - 18rem);
+#myCarousel{
+		height: 100%;
+		
 }
+
+.slide_img, .carousel-inner, .carousel-item {
+		height: 100%;
+		
+}
+
 
 /*header*/
 
@@ -215,6 +214,17 @@ height: calc(100vh - 18rem);
 	position: relative;
 }
 
+.slide_img{
+	height: 100%;
+}
+
+
+.industaty{
+	width: 33%;
+	bottom: 0;
+	left: 15%;
+	position: absolute;
+}
 .industaty__header{
 	margin-top: 4rem;
 	background-color: #ffac56;
@@ -847,9 +857,24 @@ height: calc(100vh - 18rem);
 		.menu__list{
 		flex-wrap: wrap;
 		}
+
+		.banner{
+			background: url(../img/banner_girl.jpg);
+			}		
+
+		.industaty{
+			width: 100%;
+			position: static;
+		}
 		.industaty__item{
 			width: 100%;
 		}
+		.aa{
+			display: none;
+
+		}
+
+
 		.top__content {
 			flex-wrap: wrap;
 		}
