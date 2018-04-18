@@ -89,7 +89,15 @@ h4:after{
 	padding-top: 0.5em;
 }
 
+.carousss{
+	position: absolute;
+	z-index:-1;
+}
 
+.ind_a{
+	position: absolute;
+	z-index:100;
+}
 
 
 .button{
@@ -119,6 +127,19 @@ section, footer{
 
 .img{
 	display: block;
+}
+
+
+.aa{
+	position: absolute;
+	z-index:-1;
+	padding: 0;
+}
+#myCarousel{
+	padding: 0;
+}
+.slide_img{
+height: calc(100vh - 18rem);
 }
 
 /*header*/
@@ -186,12 +207,12 @@ section, footer{
 /*banner*/
 
 .banner{
-	background: url(../img/banner_girl.jpg) no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 	height: calc(100vh - 18rem);
 	padding: 0;
 	overflow: hidden;
+	position: relative;
 }
 
 .industaty__header{
