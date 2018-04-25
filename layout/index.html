@@ -33,17 +33,14 @@
             </div>
             <div class="menu">
                 <div class="container">
-                    <div class="row d-flex align-items-end">
-                        <div class="col-lg-2"><img src="img/logo.png" alt="logo" class="logo"></div>
-                        <div class="col-lg-6 ml-auto">
-                            <nav class="navbar navbar-light bg-white navbar-expand-lg  menu__list" id="menu">
-                                <a class="navbar-brand" href="#">Menu</a>
+                            <nav class="navbar navbar-light bg-white navbar-expand-md   d-flex justify-content-between" id="menu">
+                                <a class="navbar-brand menu__item-heading" href="#"><img src="img/logo.png" alt="logo" class="logo"></a>
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
-                                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div class="collapse navbar-collapse menu__list" id="navbarNavAltMarkup">
                                     <div class="navbar-nav">
-                                        <a class=" menu__item nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                                        <a class=" menu__item menu__item-active nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
                                         <a class="menu__item nav-item nav-link" href="#aboutus">about us</a>
                                         <a class="menu__item nav-item nav-link" href="#industry">industry</a>
                                         <a class="menu__item nav-item nav-link" href="#services">services</a>
@@ -54,14 +51,12 @@
                             </nav>
                         </div>
                     </div>
-                </div>
-            </div>
         </header>
-        <section class="banner  d-flex align-items-end">
-            <div class="container-fluid aa">
+        <section class="banner  ">
+            <div class="container-fluid d-flex align-items-end height_mainscreen">
                 <!--Какусель-->
                 <!--Индекаторы-->
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div id="myCarousel" class="carousel myslider slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -91,7 +86,6 @@
           <span class="sr-only">Next</span>
         </a>
                 </div>
-            </div>
             <div class="industaty d-flex flex-wrap">
                     <div class="industaty__header">
                         <h1>Choose your industry</h1>
@@ -132,6 +126,7 @@
                         </li>
                     </ul>
             </div>
+        </div>
         </section>
     </div>
     <section class="aboutus" id="aboutus">
@@ -181,7 +176,7 @@
         <div class="container">
             <h2 class="featuredproj_header">Projects</h2>
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-md-12 col-lg-6">
                     <div class="featuredproj__item">
                         <span class="featuredproj__label">Banking</span>
                         <img src="img/project1.png" alt="project1">
@@ -192,7 +187,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 d-flex flex-wrap align-content-between justify-content-between">
+                <div class="col-md-12 col-lg-6 d-flex flex-wrap align-content-between justify-content-between">
                     <div class="featuredproj__item featuredproj__item_small">
                         <img src="img/project2.png" alt="project2">
                         <span class="featuredproj__plus"><i class="fas fa-times"></i></span>
