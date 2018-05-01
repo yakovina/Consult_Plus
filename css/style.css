@@ -60,7 +60,7 @@ h2{
 h2:before{
 	content: "";
 	text-transform: uppercase;
-	font-weight: 500;
+	font-weight: 400;
 	font-size: 1.4rem;
 	color: #898e8f;
 	display: block;
@@ -101,7 +101,7 @@ h4:after{
 	color:#fff;
 	font-size: 1.4em;
 	text-transform: uppercase;
-	font-weight: 500;
+	font-weight: 400;
 	text-decoration: none;
 	border: 3px solid #16d428;
 	transition: 0.3s ease-out;
@@ -425,6 +425,7 @@ section, footer{
 	color: #16d428;
 	display: block;
 	padding-bottom: 1.5rem ;
+	font-weight: 400;
 }
 
 
@@ -483,7 +484,7 @@ section, footer{
 	bottom:-2rem;
 	left: -3.5rem;
 	color: #fff;
-	font-weight: 500;
+	font-weight: 400;
 	font-size: 1.5rem;
 	text-transform: uppercase;
 	transform: rotate(45deg);
@@ -507,7 +508,7 @@ section, footer{
 	font-size: 1.2rem;
 	padding: 5px 0px;
 	width: 100px;
-	font-weight: 500;
+	font-weight: 400;
 	text-align: center;
 
 }
@@ -569,9 +570,12 @@ section, footer{
 
 }
 
-
+.slick-list, .draggable{
+	padding: 0 !important
+}
 .client {
-	width:70%;
+	width:80%;
+	padding: 0 !important;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -583,16 +587,35 @@ section, footer{
 	content:"Designation";
 }
 
+.client__item{
+	padding-left: 4rem;
+}
+.client__item:hover{
+	opacity: 1;
+}
 .client__img{
 	padding-right: 3rem;
 }
 
-.tetstimonials__dots{
+.dots{
 	color:#fff;
-	font-size: 4rem;
+	font-size: 2rem;
 	text-align: right;
-	width: 25%;
+	width: 10%;
 }
+
+.dots__item:hover, .dots__item:focus{
+	color: #16d428;
+}
+.slick-slide{
+	opacity: 0.7;
+}
+
+.slick-current{
+	color: #16d428 !important;
+	opacity: 1 !important;
+}
+
 
 .ourblog{
 	background-color: #e7eff1;
@@ -639,7 +662,7 @@ section, footer{
 	border: 2px solid #606668;
 	border-radius: 50px;
 	color: #606668;
-	font-weight: 700;
+	font-weight: 400;
 	width: 14rem;
 	text-align: center;
 	display: block;
@@ -726,7 +749,7 @@ section, footer{
 		border-radius: 50px;
 		color:rgba(255,255,255,0.2);
 		font-size: 1.6rem;
-		font-weight: 500;
+		font-weight: 400;
 		border: 3px solid rgba(255,255,255,0);
 }
 
@@ -742,7 +765,7 @@ section, footer{
 		color:rgba(255,255,255);
 		font-size: 1.6rem;
 		margin-left: -50px;
-		font-weight: 500;
+		font-weight: 400;
 		transition: 0.3s ease-out;
 }
 
@@ -759,7 +782,7 @@ section, footer{
 
 .footer a{
 	color:#838b8c;
-	font-weight: 500;
+	font-weight: 400;
 	font-size: 1.3rem ;
 }
 
