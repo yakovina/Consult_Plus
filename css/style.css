@@ -871,19 +871,25 @@ section, footer{
 		.featuredproj{
 			text-align: center;
 			margin: 0 auto;
+			width: 80%;
 		}
 
 
 		.featuredproj__item {
-			width: 80%;
+			width: 98%;
 			text-align: center;
 			margin: 0 auto;
 			margin-bottom: 4.5rem;
 		}
+		.featuredproj__item_small{
+			width: 48%;
+		}
+
 
 		.featuredproj__item img{
 			width: 100%;
 		}
+
 
 		.ourblog__picture{
 			top: 0;
@@ -921,9 +927,11 @@ section, footer{
 			width: 70%;
 			margin: 0 auto;
 		}
-		.industaty__item{
-			width: 100%;
-		}
+		.testimonials{
+			text-align: center;
+		 }
+
+
 		.client .slick-slide{
 		 	width: 100% !important;
 		 	margin: 0 auto !important;
@@ -931,8 +939,19 @@ section, footer{
 		.client__item{
 			margin: 0 auto;
 			margin-bottom: 3rem;
-
 		}
+		#myCarousel{
+			display:none;
+		}
+		.banner{
+			background: url(../img/banner_girl.jpg) no-repeat;
+			-webkit-background-size: cover;
+			background-size: cover;
+		}
+		.badge{
+			height: 25rem;
+		}
+	}
 
  @media (max-width: 575.98px) {
 		.client{
@@ -972,24 +991,7 @@ section, footer{
 		}
 
 		.badge{
-		width: 100%;
-		height: 10rem;
-		box-sizing: border-box;
-		background-color: #03b6e7;
-		position: absolute;
-		margin-top: 1REM;
-		border-radius: 50px;
-		top: 25%;
-		right: 0%;
-		z-index:1;
-		padding:2rem;
-		font-family: 'Montserrat', sans-serif;
-		border: none;
-		opacity: 0;
-		}
-
-		.badge:hover{
-			opacity: 1;
+			display: none;
 		}
 
 		.badge__content{
@@ -1012,6 +1014,12 @@ section, footer{
 			font-size: 7.5rem;
 			font-family: 'Montserrat', sans-serif;
 			letter-spacing: 0;
+		}
+		.featuredproj__item {
+			width: 98%;
+		}
+		.featuredproj__item_small{
+			width: 98%;
 		}
 
 		.testimonials{
