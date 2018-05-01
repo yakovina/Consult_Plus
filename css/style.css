@@ -45,6 +45,7 @@ h1:before{
 	font-size: 1.4rem;
 	color:#fff;
 	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
 	content:"We are leading consulting company";
 }
 
@@ -124,7 +125,7 @@ section, footer{
 .top{
 	background-color: #262829;
 	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: 400;
 	font-size: 1.2rem ;
 	color: #ffffff;
 	padding: 1.5rem 0;
@@ -154,7 +155,7 @@ section, footer{
 
 .menu{
 	background-color: #fff;
-	padding: 4.5rem 0;
+	padding: 2.5rem 0;
 }
 .menu__item{
 	list-style-type: none;
@@ -171,9 +172,10 @@ section, footer{
 }
 
 .menu__list a{
+	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	font-size: 1.4rem;
-	font-weight: 500;
+	font-weight: 400;
 	text-decoration: none;
 	color: #4e4e4e !important;
 }
@@ -182,6 +184,10 @@ section, footer{
 }
 .menu__list .menu__item-active{
 	color: #ffac55 !important;
+}
+
+.navbar{
+	padding-right: 0 !important;
 }
 
 /*banner*/
@@ -217,7 +223,18 @@ section, footer{
 		
 }
 
+.caruosel__item-nodisp{
+	display: none;
+}
 
+.caruosel_arrow{
+	width: 4rem;
+	height: 10rem;
+	background-color: black;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
 
 .industaty{
 	width: 33%;
@@ -294,7 +311,7 @@ section, footer{
 	color:#fff;
 	font-size: 1.4em;
 	text-transform: uppercase;
-	font-weight: 500;
+	font-weight: 400;
 	text-decoration: none;
 }
 
@@ -768,7 +785,7 @@ section, footer{
 @media (min-width: 1200px){
 	.height_mainscreen{
 	padding: 0;
-	height: calc(100vh - 18rem);
+	height: calc(100vh - 15rem);
 	position: relative;
 	
 }
@@ -977,3 +994,5 @@ section, footer{
 		.contuctus__item{ width: 100%;}
 
 }
+
+
