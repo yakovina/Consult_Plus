@@ -1,4 +1,5 @@
- $('.sl').slick({ asNavFor: '.sl2, .sl3'});
+ $('.sl').slick({ asNavFor: '.sl2, .sl3', arrows
+: false});
 $('.sl2').slick({
   slidesToShow: 3,
   slidesToScroll: 1,

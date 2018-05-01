@@ -904,6 +904,14 @@ section, footer{
 		.footer h3{
 			text-align: center;
 		}
+		.client{
+			width: 100%;
+			margin-bottom: 3rem;
+		}
+		.dots{
+			margin: 0 auto;
+
+		}
 
  }
 
@@ -915,6 +923,15 @@ section, footer{
 		}
 		.industaty__item{
 			width: 100%;
+		}
+		.client .slick-slide{
+		 	width: 100% !important;
+		 	margin: 0 auto !important;
+		}
+		.client__item{
+			margin: 0 auto;
+			margin-bottom: 3rem;
+
 		}
 
  @media (max-width: 575.98px) {
@@ -945,7 +962,6 @@ section, footer{
 			display: none;
 
 		}
-
 
 		.top__content {
 			flex-wrap: wrap;
